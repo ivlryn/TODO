@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your To Do</h1>
+        <div class="input-container">
+            <input type="text" id="new-task" placeholder="Add new task">
+          <button id="add-task-btn"><span class="icon">+</span></button>
+
+        </div>
+        <ul id="task-list">
+           
+        </ul>
+        <div class="footer">
+            <p id="remaining-todos">Your remaining todos: 0</p>
+            <p class="quote">"Doing what you love is the cornerstone of having abundance in your life." - Wayne Dyer</p>
+        </div>
+    </div>
+    <!-- Delete Confirmation Modal -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Delete Task</h2>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this task?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="confirm-delete-btn">Yes, Delete</button>
+                <button id="cancel-btn">No, Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
